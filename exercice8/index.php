@@ -11,17 +11,18 @@
       <div class="container">
         <h1 class="display-3">Exercice 8 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">Traduire ce code avec des if et des else : echo ($isOk) ? 'c'est ok !!' : 'c'est pas bon !!!';
-</p>
+        <p class="lead">Traduire ce code avec des if et des else :
+          echo ($isOk) ? 'c'est ok !!' : 'c'est pas bon !!!';
+        </p>
       </div>
     </div>
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
         $isOk = false;
         if ($isOk) {
-          echo "C'est ok !!! (Ok? = $isOk)";
+          echo 'C\'est ok !!! (Ok? = '.$isOk.')';
         } else {
-          echo "C'est pas bon !!!(Ok? = $isOk)";
+          echo 'C\'est pas bon !!!(Ok? = '.$isOk.')';
         }
       ?>
   </div>

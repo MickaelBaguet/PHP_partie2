@@ -11,17 +11,18 @@
       <div class="container">
         <h1 class="display-3">Exercice 5 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">Traduire ce code avec des if et des else : echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
-</p>
+        <p class="lead">Traduire ce code avec des if et des else :
+          echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
+        </p>
       </div>
     </div>
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
-        $gender = "homme";
-        if ($gender != "homme") {
-          echo "C'est une développeuse !!! (Genre = $gender)";
+        $gender = 'homme';
+        if ($gender != 'homme') {
+          echo 'C\'est une développeuse !!! (Genre = '.$gender.')';
         } else {
-          echo "C'est un développeur !!! (Genre = $gender)";
+          echo 'C\'est un développeur !!! (Genre = '.$gender.')';
         }
       ?>
   </div>

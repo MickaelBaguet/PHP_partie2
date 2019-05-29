@@ -17,22 +17,28 @@ Bonus : L'écrire de deux manières différentes.</p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
-    <?php
-    $isEasy = true;
-    if ($isEasy) {
-      echo "<p>C'est facile !!! (Avec un if)</p>";
-    } else {
-      echo "<p>C'est difficile !!! (Avec un if)</p>";
-    }
-    switch ($isEasy) {
-    case true:
-        echo "<p>C'est facile !!! (Avec un switch)</p>";
-        break;
-    case false:
-        echo "<p>C'est difficile !!! (Avec un switch)</p>";
-        break;
-}
-    ?>
+    <p>
+      <?php
+      $isEasy = true;
+      if ($isEasy) {
+        echo 'C\'est facile !!! (Avec un if)';
+      } else {
+        echo 'C\'est difficile !!! (Avec un if)';
+      }
+      ?>
+    </p>
+    <p>
+      <?php
+        switch ($isEasy) {
+        case true:
+            echo 'C\'est facile !!! (Avec un switch)';
+            break;
+        case false:
+            echo 'C\'est difficile !!! (Avec un switch)';
+            break;
+        }
+      ?>
+    </p>
   </div>
 </body>
 </html>

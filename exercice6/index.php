@@ -11,17 +11,18 @@
       <div class="container">
         <h1 class="display-3">Exercice 6 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">Traduire ce code avec des if et des else : echo ($age >= 18) ? 'Tu es majeur' : 'Tu n\'es pas majeur';
-</p>
+        <p class="lead">Traduire ce code avec des if et des else :
+          echo ($age >= 18) ? 'Tu es majeur' : 'Tu n\'es pas majeur';
+        </p>
       </div>
     </div>
       <!-- Balise signifiant que la suite est en PHP -->
       <?php
         $age = 19;
         if ($age >= 18) {
-          echo "Tu es majeur (Age = $age)";
+          echo 'Tu es majeur (Age = '.$age.')';
         } else {
-          echo "Tu n'es pas majeur (Age = $age)";
+          echo 'Tu n\'es pas majeur (Age = '.$age.')';
         }
       ?>
   </div>

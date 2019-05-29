@@ -11,30 +11,38 @@
       <div class="container">
         <h1 class="display-3">Exercice 3 - PHP</h1>
         <h3>Partie 2</h3>
-        <p class="lead">Créer une variable isEasy de type booléan et l'initialiser avec une valeur.
-Afficher C'est facile!! si c'est vrai. Dans le cas contraire afficher C'est difficile !!!.
-Bonus : L'écrire de deux manières différentes.</p>
+        <p class="lead">Créer deux variables age et gender. La variable gender peut prendre comme valeur :</p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    $age = 20 ;
-    $gender = "femme";
-    if ($gender == "femme") {
-      if ($age < 18) {
-        echo "Vous êtes une femme et vous êtes mineur (Age = $age, Genre = $gender)";
+    //rand: Fonction pour random
+    $age = rand(1, 35);
+    $gender = 'femme';
+    if (($gender == 'femme') && ($age < 18) ) {
+        echo 'Vous êtes une femme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
+      } elseif (($gender == 'homme') && ($age < 18) ) {
+        echo 'Vous êtes un homme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
+      } elseif ($gender == 'homme') {
+        echo 'Vous êtes un homme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
       } else {
-        echo "Vous êtes une femme et vous êtes majeur (Age = $age, Genre = $gender)";
+        echo 'Vous êtes une femme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
       }
-    } else {
-      if (condition) {
-        if ($age < 18) {
-          echo "Vous êtes un homme et vous êtes mineur (Age = $age, Genre = $gender)";
-        } else {
-          echo "Vous êtes un homme et vous êtes majeur (Age = $age, Genre = $gender)";
-        }
-      }
-    }
+    // if (($gender == 'femme') && ($age < 18) ) {
+    //   // if ($age < 18) {
+    //     echo 'Vous êtes une femme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
+    //   } else {
+    //     echo 'Vous êtes une femme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
+    //   }
+    // } else {
+    //   if (condition) {
+    //     if ($age < 18) {
+    //       echo 'Vous êtes un homme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
+    //     } else {
+    //       echo 'Vous êtes un homme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
+    //     }
+    //   }
+    // }
     ?>
   </div>
 </body>

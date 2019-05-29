@@ -12,17 +12,18 @@
         <h1 class="display-3">Exercice 1 - PHP</h1>
         <h3>Partie 2</h3>
         <p class="lead">Créer une variable age et l'initialiser avec une valeur.
-Si l'âge est supérieur ou égale à 18, afficher Vous êtes majeur. Dans le cas contraire, afficher Vous êtes mineur.</p>
+        Si l'âge est supérieur ou égale à 18, afficher Vous êtes majeur.
+        Dans le cas contraire, afficher Vous êtes mineur.</p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    // Déclaration d'une variable contenant une chaine de carac
+    // Déclaration d'une variable contenant un entier
     $age = 19;
     if ($age < 18) {
-      echo "Vous êtes mineur ! (Age = $age)";
+      echo 'Vous êtes mineur ! (Age = '.$age.')';
     } else {
-      echo "Vous êtes majeur ! (Age = $age)";
+      echo 'Vous êtes majeur ! (Age = '.$age.')';
     }
     //prompt function
     // function prompt($prompt_msg){
